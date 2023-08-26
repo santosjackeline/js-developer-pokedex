@@ -20,22 +20,31 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
     <section class="content">
-        <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
+        <h1>Pokedex ♥ </h1>
+            <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Load More ♥
+            </button>
+            <button>
+                <img src="gaming.png" alt="Gaming" width="30" height="30" />
             </button>
         </div>
     </section>
+    
+    <section class="modal hidden">
+        <button class="btn-close" onClick="closeModal()">⨉</button>
+    </section>
+
+    <div class="overlay hidden"></div>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
